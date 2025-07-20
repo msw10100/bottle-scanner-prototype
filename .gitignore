@@ -1,0 +1,66 @@
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/deps/
+
+# Where third-party dependencies like ExDoc output generated docs.
+/doc/
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
+
+# Ignore package tarball (built via "mix hex.build").
+chorus-*.tar
+
+# Temporary files, for example, from tests.
+/tmp/
+
+# Dialyzer PLT files (should not be committed)
+priv/plts/
+*.plt
+*.plt.hash
+
+# Added by Task Master AI
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+# Dependency directories
+node_modules/
+# Environment variables
+.env
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# OS specific
+.DS_Store
+
+# Memory storage test artifacts
+apps/chorus/priv/chorus/memory/agents/
+apps/*/priv/chorus/memory/
+/priv/chorus/memory/
+
+# Flaky test detection results
+test_results_*/
+
+# Test results file
+test_results.txt
+
+# Task files
+# tasks.json
+# tasks/ 
