@@ -15,7 +15,7 @@ defmodule BottleScannerPrototype.MixProject do
 
   def application do
     [
-      extra_applications: [:logger, :chorus],
+      extra_applications: [:logger],
       mod: {BottleScannerPrototype.Application, []}
     ]
   end
@@ -25,8 +25,6 @@ defmodule BottleScannerPrototype.MixProject do
 
   defp deps do
     [
-      # Core Chorus dependency - local path for development
-      {:chorus, git: "https://github.com/msw10100/bottle-scanner-prototype", sparse: "apps/chorus"},
       # Phoenix LiveView for web interface
       {:phoenix, "~> 1.7.0"},
       {:phoenix_live_view, "~> 0.20.0"},
@@ -37,7 +35,11 @@ defmodule BottleScannerPrototype.MixProject do
       {:httpoison, "~> 2.0"},
       {:jason, "~> 1.4"},
       # Image processing
-      {:image, "~> 0.54"}
+      {:image, "~> 0.54"},
+      # XML parsing for vision API responses
+      {:sweet_xml, "~> 0.7"},
+      # Image processing library with Vision AI integration
+      {:vix, "~> 0.26"}
     ]
   end
 
