@@ -15,7 +15,7 @@ defmodule BottleScannerPrototype.MixProject do
 
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :chorus],
       mod: {BottleScannerPrototype.Application, []}
     ]
   end
@@ -25,6 +25,8 @@ defmodule BottleScannerPrototype.MixProject do
 
   defp deps do
     [
+      # Core Chorus dependency
+      {:chorus, git: "https://github.com/msw10100/chorus", sparse: "apps/chorus"},
       # Phoenix LiveView for web interface
       {:phoenix, "~> 1.7.0"},
       {:phoenix_live_view, "~> 0.20.0"},
