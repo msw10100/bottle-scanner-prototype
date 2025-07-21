@@ -25,8 +25,7 @@ defmodule BottleScannerPrototype.MixProject do
 
   defp deps do
     [
-      # Core Chorus dependency
-      {:chorus, git: "https://github.com/msw10100/chorus", sparse: "apps/chorus"},
+      # Core Chorus dependency (included in lib/chorus for deployment)
       # Phoenix LiveView for web interface
       {:phoenix, "~> 1.7.0"},
       {:phoenix_live_view, "~> 0.20.0"},
